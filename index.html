@@ -199,18 +199,18 @@ p#result {
           case "+":
             //   result = parseFloat(num1) + parseFloat(num2);
             result = ((num2 - num1) / num1) * (234.5 + num3) - (num4 - num3);
-            console.log(result);
+            // console.log(result);
             break;
           case "-":
             result = ((num2 - num1) / num1) * (225 + num3) - (num4 - num3);
-            console.log(result);
+            // console.log(result);
             break;
 
           default:
             result = "Invalid operation";
         }
 
-        document.getElementById("result").innerHTML = "Result: " + result + "C";
+        document.getElementById("result").innerHTML = "Result: " + Math.round(result) + "C";
       }
     </script>
   </body>
